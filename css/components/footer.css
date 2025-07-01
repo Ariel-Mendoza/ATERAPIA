@@ -1,0 +1,142 @@
+.site-footer {
+  background-color: #005f83;
+  color: #e0f7fa;
+  padding-top: 3rem;
+  line-height: 1.7;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 280px;
+}
+
+.footer-heading {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #00bfa5;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.footer-about-text {
+  color: #b3e5fc;
+  margin-bottom: 1.5rem;
+}
+
+/* Listas de enlaces y contacto */
+.footer-links, .footer-contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links a {
+  color: #e0f7fa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+  color: #e0f7fa; /* Color del texto para el contacto */
+}
+
+/* Iconos de Font Awesome */
+.footer-contact-info .fa-solid, .social-links .fa-brands {
+  font-size: 1.1rem; /* Tamaño unificado para iconos */
+  color: #00bfa5; /* Color de acento */
+  width: 20px; /* Asegura alineación consistente */
+  text-align: center;
+}
+
+/* Iconos de redes sociales */
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-links a {
+  color: white;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links .fa-brands {
+  font-size: 1.8rem;
+  color: #ffffff; /* Los iconos sociales serán blancos */
+  transition: color 0.3s;
+}
+
+.social-links a:hover .fa-whatsapp { color: #25D366; }
+.social-links a:hover .fa-instagram { color: #E4405F; }
+.social-links a:hover .fa-facebook { color: #1877F2; }
+.social-links a:hover .fa-tiktok { color: #000000; } /* TikTok tiene múltiples colores, negro es común */
+
+.social-links a:hover {
+  transform: translateY(-3px);
+}
+
+/* Barra inferior */
+.footer-bottom-bar {
+  background-color: #004c6a;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #b3e5fc;
+}
+
+@media (max-width: 768px) {
+  .footer-main {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem; /* Menos espacio entre columnas apiladas */
+  }
+
+  .site-footer {
+    padding-top: 2rem; /* Menos padding en móvil */
+  }
+  
+  .footer-heading {
+    display: block;
+    font-size: 1rem; /* Título ligeramente más pequeño */
+  }
+  
+  .footer-contact-info li, .social-links {
+    justify-content: center;
+  }
+  
+  .footer-about-text {
+    font-size: 0.95rem; /* Texto ligeramente más pequeño */
+  }
+
+  /* --- AJUSTES DE ICONOS Y ENLACES --- */
+  .social-links {
+    gap: 1.8rem; /* Un poco más de espacio para tocar con el dedo */
+  }
+
+  .social-links .fa-brands {
+    font-size: 1.6rem; /* Iconos un poco más pequeños */
+  }
+
+  .footer-links li {
+    padding: 0.2rem 0; /* Un poco de espacio vertical para los enlaces */
+  }
+}
