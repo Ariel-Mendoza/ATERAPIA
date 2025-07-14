@@ -1,0 +1,77 @@
+.hero-section {
+  position: relative; /* Necesario para el efecto de superposición */
+  height: 85vh; /* Ocupa el 85% de la altura de la pantalla */
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+
+  /* === IMAGEN DE FONDO === */
+  /* Reemplaza 'hero-background.jpg' con el nombre de tu imagen */
+  background-image: url('../../img/hero-background.png'); 
+  background-size: cover; /* Asegura que la imagen cubra todo el espacio */
+  background-position: center center; /* Centra la imagen */
+}
+
+/* === CAPA OSCURA DE SUPERPOSICIÓN (OVERLAY) === */
+/* Esto oscurece un poco la imagen para que el texto sea más legible */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 48, 73, 0.5); /* Color azul oscuro con 50% de opacidad */
+  z-index: 1; /* Se asegura que la capa esté entre la imagen y el texto */
+}
+
+/* === CONTENIDO DE TEXTO Y BOTÓN === */
+.hero-content {
+  position: relative; /* Necesario para que esté por encima de la capa de superposición */
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 1rem;
+}
+
+.hero-title {
+  font-size: 3.5rem; /* Tamaño grande para el título */
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para legibilidad */
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero-button {
+  background-color: #00bfa5;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #00a78e;
+  transform: translateY(-3px);
+}
+
+/* === RESPONSIVIDAD PARA MÓVILES === */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+}

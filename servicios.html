@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Métodos - Centro de Terapia de Lenguaje</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/servicios.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <body>
+ <!-- El header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="logo-container">
+        <a href="index.html" class="logo-link">
+          <img src="img/logo.png" alt="Logo ATERAPIA" class="logo-img" />
+          <span class="logo-text">ATERAPIA</span>
+        </a>
+      </div>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-label"><i class="fa-solid fa-bars"></i></label>
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="Nosotros.html">Nosotros</a>
+        <a href="articulos.html">Artículos</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="reserva.html" class="nav-cta">Reserva tu Cita</a>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <!-- Sección Héroe de la página de Servicios -->
+    <section class="services-hero">
+      <div class="container">
+        <h1>Nuestros Servicios</h1>
+        <p>Soluciones personalizadas para cada etapa del desarrollo comunicativo.</p>
+      </div>
+    </section>
+
+    <!-- Grid con las tarjetas de servicios -->
+    <section class="services-section">
+      <div class="container">
+          <div class="service-grid">
+          <!-- Tarjeta 1: Terapia Infantil (Existente) -->
+  <div class="service-card" style="background-image: url('img/servicio-infantil.png');">
+    <div class="card-content">
+      <i class="fa-solid fa-child"></i>
+      <h3>Terapia de Lenguaje Infantil</h3>
+      <p>Intervención para retrasos del habla, trastornos fonológicos y desarrollo del lenguaje en pre-escolares.</p>
+      <a href="#" class="card-link" data-service="lenguajeInfantil">Saber Más</a>
+    </div>
+  </div>
+
+  <!-- Tarjeta 2: Terapia Adultos (Existente) -->
+  <div class="service-card" style="background-image: url('img/servicio-adulto.png');">
+    <div class="card-content">
+      <i class="fa-solid fa-user-tie"></i>
+      <h3>Terapia de Lenguaje Adultos</h3>
+      <p>Rehabilitación del habla post-ACV, terapia de la voz para profesionales y tratamiento de la tartamudez.</p>
+      <a href="#" class="card-link" data-service="lenguajeAdultos">Saber Más</a>
+    </div>
+  </div>
+
+  <!-- Tarjeta 3: Terapia Ocupacional (NUEVO) -->
+  <div class="service-card" style="background-image: url('img/servicio-ocupacional.png');">
+    <div class="card-content">
+      <i class="fa-solid fa-puzzle-piece"></i>
+      <h3>Terapia Ocupacional</h3>
+      <p>Apoyo para desarrollar habilidades de la vida diaria, motricidad fina y procesamiento sensorial en niños y adultos.</p>
+      <a href="#" class="card-link" data-service="terapiaOcupacional">Saber Más</a>
+    </div>
+  </div>
+
+  <!-- Tarjeta 4: Terapia Física (NUEVO) -->
+  <div class="service-card" style="background-image: url('img/servicio-fisica.png');">
+    <div class="card-content">
+      <i class="fa-solid fa-person-running"></i>
+      <h3>Terapia Física y Rehabilitación</h3>
+      <p>Recuperación del movimiento, manejo del dolor y rehabilitación funcional para mejorar tu calidad de vida.</p>
+      <a href="#" class="card-link" data-service="terapiaFisica">Saber Más</a>
+    </div>
+  </div>
+  
+  <!-- Tarjeta 5: Estimulación Temprana (NUEVO) -->
+  <div class="service-card" style="background-image: url('img/servicio-temprana.png');">
+    <div class="card-content">
+      <i class="fa-solid fa-shapes"></i>
+      <h3>Estimulación Temprana</h3>
+      <p>Programas para potenciar el desarrollo cognitivo, motor y social en bebés y niños en su primera infancia.</p>
+      <a href="#" class="card-link" data-service="estimulacionTemprana">Saber Más</a>
+    </div>
+  </div>
+
+  <!-- Tarjeta 6: Evaluación (Existente) -->
+  <div class="service-card" style="background-image: url('img/servicio-evaluacion.png');">
+    <div class="card-content">
+      <i class="fa-solid fa-clipboard-check"></i>
+      <h3>Evaluación y Diagnóstico</h3>
+      <p>Análisis completo de las habilidades comunicativas y motoras para crear un plan terapéutico preciso.</p>
+      <a href="#" class="card-link" data-service="evaluacion">Reservar Evaluación</a>
+    </div>
+  </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Sección de Llamada a la Acción (CTA) -->
+    <section class="cta-section">
+      <div class="container cta-container">
+        <h2>¿No estás seguro por dónde empezar?</h2>
+        <p>No te preocupes. El primer paso es una evaluación. Contáctanos y nuestro equipo te guiará para encontrar el servicio que mejor se adapte a tus necesidades.</p>
+        <a href="contacto.html" class="cta-button">Contactar para Orientación</a>
+      </div>
+    </section>
+  </main>
+<!-- Estructura del Modal  -->
+  <div id="service-modal-overlay" class="modal-overlay">
+    <div class="modal-container">
+      <button id="modal-close-btn" class="modal-close-btn">×</button>
+      <div class="modal-content">
+        <div id="modal-icon" class="modal-icon-container"></div>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <h3 id="modal-benefits-title"></h3>
+        <ul id="modal-benefits-list"></ul>
+      </div>
+    </div>
+  </div>
+<!--footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-main">
+
+      <!-- Columna 1: Acerca de y Redes Sociales -->
+      <div class="footer-column">
+        <h4 class="footer-heading">ATERAPIA</h4>
+        <p class="footer-about-text">Centro dedicado a brindar soluciones para el desarrollo comunicativo de niños y adultos, con un enfoque humano y científico.</p>
+        <div class="social-links">
+          <a href="https://wa.me/..." target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/..." target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/..." target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.tiktok.com/..." target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <!-- Columna 2: Enlaces de Navegación -->
+      <div class="footer-column">
+        <h4 class="footer-heading">Navegación</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Nosotros.html">Nosotros</a></li>
+          <li><a href="articulos.html">Artículos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="metodos.html">Métodos</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Información de Contacto -->
+      <div class="footer-column">
+        <h4 class="footer-heading">Contáctanos</h4>
+        <ul class="footer-contact-info">
+          <li><i class="fa-solid fa-location-dot"></i><span>Av. del Sol 123, Miraflores, Lima</span></li>
+          <li><i class="fa-solid fa-envelope"></i><span>info@aterapia.com</span></li>
+          <li><i class="fa-solid fa-phone"></i><span>+51 987 654 321</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  
+  <!-- Barra inferior para el Copyright -->
+  <div class="footer-bottom-bar">
+    <div class="container">
+      <p>© 2025 Centro de Terapia de Lenguaje. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+  <script src="js/metodos.js"></script>
+  <script src="js/servicios.js"></script>
+  <script src="js/chatbot.js"></script>
+<!-- =====  CHATBOT ===== -->
+<div id="chat-fab" class="chat-fab">
+  <i class="fa-solid fa-comments"></i>
+</div>
+<div id="chat-window" class="chat-window">
+  <div class="chat-header">
+    <div class="chat-avatar">
+      <img src="img/logo.png" alt="Logo ATERAPIA">
+    </div>
+    <div class="chat-title">
+      <h3>Asistente ATERAPIA</h3>
+      <p>En línea</p>
+    </div>
+    <button id="chat-close-btn" class="chat-close-btn">×</button>
+  </div>
+  <div id="chat-body" class="chat-body">
+  </div>
+  <div id="chat-input-area" class="chat-input-area">
+  <div id="chat-options" class="chat-options">
+  </div>
+  <form id="chat-form" class="chat-form">
+    <input type="text" id="chat-input" placeholder="Escribe tu mensaje..." autocomplete="off">
+    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+  </form>
+</div>
+</div>
+<!-- ===== FIN ===== -->
+</body>
+</html>

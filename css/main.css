@@ -1,0 +1,37 @@
+/* Importar estilos de componentes reutilizables */
+@import url('components/header.css');
+@import url('components/footer.css');
+@import url('components/hero.css');
+@import url('components/horario-box.css');  
+@import url('reserva.css');
+@import url('servicios.css');
+@import url('components/modal.css');
+@import url('components/chatbot.css');
+/* === ESTILOS GLOBALES Y DE ESTRUCTURA === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.5;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+/* === CLASE CONTENEDORA GLOBAL === */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}

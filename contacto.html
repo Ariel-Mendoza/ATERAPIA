@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - Centro de Terapia de Lenguaje</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/contacto.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+ <!-- El header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="logo-container">
+        <a href="index.html" class="logo-link">
+          <img src="img/logo.png" alt="Logo ATERAPIA" class="logo-img" />
+          <span class="logo-text">ATERAPIA</span>
+        </a>
+      </div>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-label"><i class="fa-solid fa-bars"></i></label>
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="Nosotros.html">Nosotros</a>
+        <a href="articulos.html">Artículos</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="reserva.html" class="nav-cta">Reserva tu Cita</a>
+      </nav>
+    </div>
+  </header>
+  
+ <main>
+    <section class="contact-section">
+      <div class="container">
+
+        <!-- Contenedor principal del Grid (Formulario + Mapa) -->
+        <div id="contact-grid" class="contact-grid-container">
+
+          <!-- Columna 1: Formulario Interactivo -->
+          <div class="contact-form-container">
+            <h2>Escríbenos</h2>
+            <form id="contact-form" class="contact-form" novalidate>
+              <div>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required />
+                <div class="error-message" id="error-nombre"></div>
+              </div>
+              <div>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required />
+                <div class="error-message" id="error-correo"></div>
+              </div>
+              <div>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                <div class="error-message" id="error-mensaje"></div>
+              </div>
+              <button type="submit">Enviar Mensaje</button>
+            </form>
+          </div>
+
+          <!-- Columna 2: Mapa -->
+          <div class="map-container">
+            <h2>Nuestra Ubicación</h2>
+            <!-- ▼▼▼ PEGA TU CÓDIGO DE IFRAME DE GOOGLE MAPS AQUÍ ▼▼▼ -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.983637459145!2d-77.0301186851868!3d-12.11210699142345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8f108871f37%3A0x3344158866a256a!2sParque%20Kennedy%2C%20Miraflores%2015074!5e0!3m2!1ses-419!2spe!4v1672533215684!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- ▲▲▲ FIN DEL CÓDIGO DEL IFRAME ▲▲▲ -->
+          </div>
+        </div>
+
+        <!-- Mensaje de Éxito (Oculto) -->
+        <div id="success-message" class="success-message-container">
+          <i class="fa-solid fa-circle-check"></i>
+          <h3>¡Mensaje Enviado!</h3>
+          <p>Gracias por contactarnos. Nos pondremos en contacto contigo a la brevedad.</p>
+        </div>
+    <!-- BLOQUE DE HORARIO -->
+
+    <div class="horario-box">
+      <h3><i class="fa-regular fa-clock"></i> Nuestro Horario de Atención</h3>
+      <ul class="horario-list">
+        <li>
+          <span>Lunes a Viernes</span>
+          <span class="horario-time">9:00 AM - 7:00 PM</span>
+        </li>
+        <li>
+          <span>Sábados</span>
+          <span class="horario-time">9:00 AM - 1:00 PM</span>
+        </li>
+        <li>
+          <span>Domingos</span>
+          <span class="horario-time">Cerrado</span>
+        </li>
+      </ul>
+    </div>
+
+        <!-- Opciones de Contacto Alternativas -->
+        <div class="alternative-contact">
+          <h4>¿Prefieres otro método?</h4>
+          <div class="alternative-options">
+            <a href="https://wa.me/..." class="option-box"><i class="fa-solid fa-phone"></i><span>Llámanos</span></a>
+            <a href="https://wa.me/..." target="_blank" class="option-box"><i class="fa-brands fa-whatsapp"></i><span>Escríbenos por WhatsApp</span></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-main">
+
+      <!-- Columna 1: Acerca de y Redes Sociales -->
+      <div class="footer-column">
+        <h4 class="footer-heading">ATERAPIA</h4>
+        <p class="footer-about-text">Centro dedicado a brindar soluciones para el desarrollo comunicativo de niños y adultos, con un enfoque humano y científico.</p>
+        <div class="social-links">
+          <a href="https://wa.me/..." target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/..." target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/..." target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.tiktok.com/..." target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <!-- Columna 2: Enlaces de Navegación -->
+      <div class="footer-column">
+        <h4 class="footer-heading">Navegación</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Nosotros.html">Nosotros</a></li>
+          <li><a href="articulos.html">Artículos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="metodos.html">Métodos</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Información de Contacto -->
+      <div class="footer-column">
+        <h4 class="footer-heading">Contáctanos</h4>
+        <ul class="footer-contact-info">
+          <li><i class="fa-solid fa-location-dot"></i><span>Av. del Sol 123, Miraflores, Lima</span></li>
+          <li><i class="fa-solid fa-envelope"></i><span>info@aterapia.com</span></li>
+          <li><i class="fa-solid fa-phone"></i><span>+51 987 654 321</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  
+  <!-- Barra inferior para el Copyright -->
+  <div class="footer-bottom-bar">
+    <div class="container">
+      <p>© 2025 Centro de Terapia de Lenguaje. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+  <script src="js/contacto.js"></script>
+  <script src="js/chatbot.js"></script>
+<!-- =====  CHATBOT ===== -->
+<div id="chat-fab" class="chat-fab">
+  <i class="fa-solid fa-comments"></i>
+</div>
+<div id="chat-window" class="chat-window">
+  <div class="chat-header">
+    <div class="chat-avatar">
+      <img src="img/logo.png" alt="Logo ATERAPIA">
+    </div>
+    <div class="chat-title">
+      <h3>Asistente ATERAPIA</h3>
+      <p>En línea</p>
+    </div>
+    <button id="chat-close-btn" class="chat-close-btn">×</button>
+  </div>
+  <div id="chat-body" class="chat-body">
+  </div>
+  <div id="chat-input-area" class="chat-input-area">
+  <div id="chat-options" class="chat-options">
+  </div>
+  <form id="chat-form" class="chat-form">
+    <input type="text" id="chat-input" placeholder="Escribe tu mensaje..." autocomplete="off">
+    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+  </form>
+</div>
+</div>
+<!-- ===== FIN ===== -->
+</body>
+</html>

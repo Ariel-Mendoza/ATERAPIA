@@ -1,0 +1,97 @@
+/* === SECCIÓN NOSOTROS (Nosotros.html) === */
+.section {
+  padding: 4rem 1rem;
+  background: white;
+}
+
+.valores-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.valores-item {
+  flex: 1 1 280px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.valores-item .icono {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.valores-item h3, .valores-item h4 {
+  color: #0077a6;
+  margin-bottom: 0.5rem;
+}
+
+/* === SECCIÓN EQUIPO (Nosotros.html) === */
+.equipo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.miembro {
+  flex: 1 1 220px;
+  max-width: 300px;
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.miembro:hover {
+  transform: translateY(-5px);
+}
+
+.miembro img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  max-width: 150px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.miembro:hover img {
+  transform: scale(1.05);
+}
+
+.miembro h4 {
+  margin-bottom: 0.3rem;
+  color: #0077a6;
+}
+
+.miembro p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* === SECCIÓN TESTIMONIOS (Nosotros.html) === */
+.testimonios-carrusel {
+  margin-top: 2rem;
+}
+
+blockquote {
+  background: #e0f7fa;
+  padding: 1rem 1.5rem;
+  border-left: 5px solid #00bfa5;
+  font-style: italic;
+  border-radius: 5px;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto;
+}

@@ -1,0 +1,61 @@
+/* Sección marcas-detalle */
+.marcas-detalle-section {
+  background: #fff;
+  padding: 4rem 1rem;
+}
+
+.marcas-detalle-section .container {
+  display: flex;
+  gap: 2rem;
+}
+
+.marcas-lista ul {
+  list-style: none;
+  color: #aaa;
+  line-height: 2;
+  font-weight: bold;
+  padding-left: 0;
+}
+
+.marcas-lista li {
+  cursor: pointer;
+}
+
+.marcas-lista li.activo {
+  color: #0077a6;
+  border-left: 3px solid #00c853;
+  padding-left: 0.5rem;
+}
+
+.marcas-info h1 {
+  color: #0077a6;
+  margin-bottom: 1rem;
+}
+
+.marcas-info p {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.marcas-detalle-lista {
+  /* Se eliminan 'display: flex' y 'flex-wrap: wrap' para que los <li> se apilen verticalmente */
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  
+  gap: 1rem; /* El gap ya no tendrá efecto en los items li al no ser flex */
+  margin: 1rem 0;
+  list-style: disc; /* Asegura que se muestren las viñetas de disco */
+  padding-left: 20px; /* Agrega espacio a la izquierda para que las viñetas sean visibles */
+}
+
+.marcas-detalle-lista li {
+  list-style: disc; /* Reafirma el estilo de viñeta para cada ítem */
+  margin-left: 1rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .marcas-detalle-section .container {
+    flex-direction: column;
+  }
+}

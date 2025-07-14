@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reserva tu Cita - ATERAPIA</title>
+  
+  <!-- Estilos Globales y de Componentes -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Estilos específicos para esta página -->
+  <link rel="stylesheet" href="css/reserva.css" />
+  
+  <!-- Font Awesome para los iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- El header es el mismo en todas las páginas -->
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="logo-container">
+        <a href="index.html" class="logo-link">
+          <img src="img/logo.png" alt="Logo ATERAPIA" class="logo-img" />
+          <span class="logo-text">ATERAPIA</span>
+        </a>
+      </div>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-label"><i class="fa-solid fa-bars"></i></label>
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="Nosotros.html">Nosotros</a>
+        <a href="articulos.html">Artículos</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="reserva.html" class="nav-cta">Reserva tu Cita</a>
+      </nav>
+    </div>
+  </header>
+
+ <main>
+    <section class="reserva-page-wrapper">
+      <div class="container">
+        <div class="reserva-intro">
+          <h2>Reserva tu Cita de Evaluación</h2>
+          <p>Este es el primer paso hacia una comunicación más clara y segura. Nuestro equipo está listo para ayudarte.</p>
+        </div>
+
+        <div id="reserva-grid" class="reserva-grid-container">
+
+          <!-- Columna Izquierda: Información y Confianza -->
+          <div class="reserva-info">
+            <img src="img/reserva-img.png" alt="Terapeuta en una sesión de evaluación" class="reserva-featured-img">
+            <h3>¿Qué esperar de la cita?</h3>
+            <ul class="benefits-list">
+              <li><i class="fa-solid fa-ear-listen"></i>Una conversación empática para entender tus necesidades.</li>
+              <li><i class="fa-solid fa-clipboard-question"></i>Aplicación de pruebas estandarizadas para un diagnóstico preciso.</li>
+              <li><i class="fa-solid fa-road"></i>Un plan de acción y próximos pasos claros y personalizados.</li>
+            </ul>
+          <!--bolque de horario-->            
+             <div class="horario-box">
+              <h3><i class="fa-regular fa-clock"></i> Nuestro Horario de Atención</h3>
+              <ul class="horario-list">
+                <li>
+                  <span>Lunes a Viernes</span>
+                  <span class="horario-time">9:00 AM - 7:00 PM</span>
+                </li>
+                <li>
+                  <span>Sábados</span>
+                  <span class="horario-time">9:00 AM - 1:00 PM</span>
+                </li>
+                <li>
+                  <span>Domingos</span>
+                  <span class="horario-time">Cerrado</span>
+                </li>
+              </ul>
+            </div>
+
+            <blockquote>
+              "La primera cita fue muy reveladora. Nos sentimos escuchados y salimos con un plan claro. ¡Totalmente recomendado!"
+              <footer>– Familia Ramírez</footer>
+            </blockquote>
+          </div>
+
+          <!-- Columna Derecha: Formulario de Reserva -->
+          <div class="reserva-form-box">
+            <h3>Completa tus datos</h3>
+            <form id="reserva-form" novalidate>
+              <div>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <div class="error-message" id="error-nombre"></div>
+              </div>
+              <div>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+                <div class="error-message" id="error-correo"></div>
+              </div>
+              <div>
+                <label for="telefono">Teléfono de contacto:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                <div class="error-message" id="error-telefono"></div>
+              </div>
+              <div>
+                <label for="fecha_cita">Selecciona fecha y hora:</label>
+                <input type="datetime-local" id="fecha_cita" name="fecha_cita" required>
+                <div class="error-message" id="error-fecha_cita"></div>
+              </div>
+              <p class="timezone">Uso horario: GMT-5 (PERU)</p>
+              <button type="submit">Confirmar Cita</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Mensaje de Éxito (Oculto) -->
+        <div id="success-message" class="success-message-container">
+          <i class="fa-solid fa-calendar-check"></i>
+          <h3>¡Cita Pre-Reservada!</h3>
+          <p>Hemos recibido tu solicitud. Nos pondremos en contacto contigo por correo o teléfono para confirmar la disponibilidad.</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- El footer es el mismo en todas las páginas -->
+  <footer class="site-footer">
+  <footer class="site-footer">
+  <div class="container">
+    <div class="footer-main">
+
+      <!-- Columna 1: Acerca de y Redes Sociales -->
+      <div class="footer-column">
+        <h4 class="footer-heading">ATERAPIA</h4>
+        <p class="footer-about-text">Centro dedicado a brindar soluciones para el desarrollo comunicativo de niños y adultos, con un enfoque humano y científico.</p>
+        <div class="social-links">
+          <a href="https://wa.me/..." target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/..." target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/..." target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.tiktok.com/..." target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <!-- Columna 2: Enlaces de Navegación -->
+      <div class="footer-column">
+        <h4 class="footer-heading">Navegación</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Nosotros.html">Nosotros</a></li>
+          <li><a href="articulos.html">Artículos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="metodos.html">Métodos</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Información de Contacto -->
+      <div class="footer-column">
+        <h4 class="footer-heading">Contáctanos</h4>
+        <ul class="footer-contact-info">
+          <li><i class="fa-solid fa-location-dot"></i><span>Av. del Sol 123, Miraflores, Lima</span></li>
+          <li><i class="fa-solid fa-envelope"></i><span>info@aterapia.com</span></li>
+          <li><i class="fa-solid fa-phone"></i><span>+51 987 654 321</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  
+  <!-- Barra inferior para el Copyright -->
+  <div class="footer-bottom-bar">
+    <div class="container">
+      <p>© 2025 Centro de Terapia de Lenguaje. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+  </footer>
+ <script src="js/reserva.js"></script>
+ <script src="js/chatbot.js"></script>
+<!-- =====  CHATBOT ===== -->
+<div id="chat-fab" class="chat-fab">
+  <i class="fa-solid fa-comments"></i>
+</div>
+<div id="chat-window" class="chat-window">
+  <div class="chat-header">
+    <div class="chat-avatar">
+      <img src="img/logo.png" alt="Logo ATERAPIA">
+    </div>
+    <div class="chat-title">
+      <h3>Asistente ATERAPIA</h3>
+      <p>En línea</p>
+    </div>
+    <button id="chat-close-btn" class="chat-close-btn">×</button>
+  </div>
+  <div id="chat-body" class="chat-body">
+  </div>
+  <div id="chat-input-area" class="chat-input-area">
+  <div id="chat-options" class="chat-options">
+  </div>
+  <form id="chat-form" class="chat-form">
+    <input type="text" id="chat-input" placeholder="Escribe tu mensaje..." autocomplete="off">
+    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+  </form>
+</div>
+</div>
+<!-- ===== FIN ===== -->
+</body>
+</html>

@@ -1,0 +1,125 @@
+.site-header {
+  background-color: #0077a6;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Estilos del logo */
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+}
+
+.logo-text {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Estilos de la navegación principal */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav a {
+  color: #e0f7fa;
+  text-decoration: none;
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.nav a:hover, .nav a.active {
+  color: #ffffff;
+  border-bottom-color: #00bfa5;
+}
+
+/* Botón de Llamada a la Acción (CTA) */
+.nav-cta {
+  background-color: #00bfa5;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-cta:hover {
+  background-color: #00a78e;
+  color: #ffffff;
+  border-bottom-color: transparent;
+  transform: translateY(-2px);
+}
+
+/* Lógica del menú móvil (Hamburguesa) */
+.menu-toggle {
+  display: none; /* Oculto por defecto */
+}
+
+.menu-label {
+  display: none; /* Oculto en escritorio */
+  color: #ffffff;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* === MEDIA QUERY PARA RESPONSIVIDAD === */
+@media (max-width: 850px) { /* Ajustado el punto de quiebre para que el menú no se amontone */
+  .nav {
+    display: none; /* Ocultamos la navegación */
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    position: absolute;
+    top: 100%; /* Justo debajo del header */
+    left: 0;
+    width: 100%;
+    background-color: #006a94; /* Un poco más oscuro para diferenciar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+  }
+
+  .nav a {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #005f83; /* Separador entre enlaces */
+  }
+
+  .nav a:hover {
+    background-color: #005f83;
+    border-bottom-color: #005f83;
+  }
+  
+  .nav-cta {
+    border-radius: 0;
+    border-bottom: none;
+  }
+
+  .menu-label {
+    display: block; /* Mostramos el icono de hamburguesa */
+  }
+
+  /* Cuando el checkbox está activo, mostramos el menú */
+  .menu-toggle:checked ~ .nav {
+    display: flex;
+  }
+}
