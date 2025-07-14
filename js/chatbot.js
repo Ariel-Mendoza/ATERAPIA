@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     ask_reserva: {
       text: "¡Genial! Puedes reservar tu cita directamente en nuestra página de reservas. Te llevaré allí en un momento.",
-      action: () => { window.location.href = '/reserva.html'; },
+      action: () => { window.location.href = 'reserva.html'; },
       keywords: {
         "cita": "ask_reserva",
         "reservar": "ask_reserva",
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     ask_servicios: {
       text: "Claro, aquí puedes ver todas nuestras terapias y especialidades. Te redirijo a la página.",
-      action: () => { window.location.href = '/servicios.html'; },
+      action: () => { window.location.href = 'servicios.html'; },
       keywords: {
         "servicios": "ask_servicios",
         "terapia": "ask_servicios",
